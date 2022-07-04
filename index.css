@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #f089bb;
+    --primary-color: #F599C5;
     --secondary-color: #2D3047;
     --body-color: #FFFAFF;
     --key-color: #78C1EB;
@@ -36,6 +36,8 @@
     padding: 0;
     margin-bottom: 100vh;
     margin-top: 20vh;
+    min-width: 680px;
+    max-height: 60vw;
 }
 
 #sidebar {
@@ -135,7 +137,7 @@
     color: var(--body-color);
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 #footer-inner {
@@ -150,6 +152,7 @@
 .social-links {
     color: var(--body-color);
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .social-links:hover {
