@@ -32,12 +32,12 @@
 }
 
 .section {
-    width: 100%;
     padding: 0;
     margin-bottom: 100vh;
     margin-top: 20vh;
-    min-width: 680px;
-    max-height: 60vw;
+    min-width: 625px
+    /* min-width: 500px; */
+    /* max-height: 60vw; */
 }
 
 #sidebar {
@@ -49,8 +49,8 @@
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 15px;
 }
 
@@ -156,6 +156,17 @@
 }
 
 .social-links:hover {
-    color: var(--body-color);
+    color: var(--secondary-color);
     text-decoration: none;
+    animation-duration: var(--time);
+    animation-name: color-transition;
+}
+
+@keyframes color-transition {
+    from {
+        color: var(--body-color);
+    }
+    to {
+        color: var(--secondary-color);
+    }
 }
