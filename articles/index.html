@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.5.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Kevin Zhou">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://knzhou.github.io/articles/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.4731b10c3a8aac85ab261b8ce101e025.css">
+
+  
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://knzhou.github.io/articles/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Kevin Zhou">
+  <meta property="og:url" content="https://knzhou.github.io/articles/">
+  <meta property="og:title" content=" | Kevin Zhou">
+  <meta property="og:description" content=""><meta property="og:image" content="https://knzhou.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://knzhou.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title> | Kevin Zhou</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Kevin Zhou</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Papers</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#notes"><span>Notes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#writing"><span>Writing</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  
+<span class="js-widget-page d-none"></span>
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="articles" class="home-section wg-blank   "  >
+    <div class="container">
+      
+
+
+<div class="row">
+  
+    <div class="col-12 col-lg-4 section-heading">
+      <h1>Articles</h1>
+      
+    </div>
+    <div class="col-12 col-lg-8">
+      
+
+<p>Here are some articles that I&rsquo;ve saved. Some are one-sided, some are melodramatic, and a few have turned out to be completely wrong. But I thought all of them were interesting.</p>
+
+<h3 id="modernization">Modernization</h3>
+
+<ul>
+<li><a href="https://rootsofprogress.org/industrial-literacy" target="_blank">Industrial Literacy</a> / <a href="https://www.rachellaudan.com/wp-content/uploads/2007/12/plea-for-culinary-modernism.pdf" target="_blank">A Plea for Culinary Modernism</a></li>
+<li><a href="https://scholars-stage.blogspot.com/2020/10/we-were-builders-once-and-strong.html?m=1" target="_blank">We Were Builders Once, and Strong</a> / <a href="https://scholars-stage.blogspot.com/2020/06/on-cultures-that-build.html" target="_blank">On Cultures That Build</a></li>
+<li><a href="https://rootsofprogress.org/turning-air-into-bread" target="_blank">Turning Air Into Bread</a> / <a href="https://www.damninteresting.com/the-ethyl-poisoned-earth/" target="_blank">The Ethyl-Poisoned Earth</a></li>
+<li><a href="https://idlewords.com/2010/03/scott_and_scurvy.htm" target="_blank">Scott and Scurvy</a> / <a href="https://slatestarcodex.com/2019/06/04/book-review-the-secret-of-our-success/" target="_blank">The Secret of Our Success</a></li>
+<li><a href="https://slatestarcodex.com/2017/03/16/book-review-seeing-like-a-state/" target="_blank">Seeing Like a State</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_blank">As We May Think</a> / <a href="https://courses.aynrand.org/works/apollo-and-dionysus/" target="_blank">Apollo and Dionysus</a></li>
+</ul>
+
+<h3 id="modernity">Modernity</h3>
+
+<ul>
+<li><a href="http://www.paulgraham.com/re.html" target="_blank">The Refragmentation</a></li>
+<li><a href="https://www.strongtowns.org/journal/2017/1/9/the-real-reason-your-city-has-no-money" target="_blank">The Real Reason Your City Has No Money</a></li>
+<li><a href="https://www.nytimes.com/2019/03/12/magazine/baltimore-tragedy-crime.html" target="_blank">The Tragedy of Baltimore</a></li>
+<li><a href="https://prospect.org/infrastructure/strange-disappearance-civic-america/" target="_blank">The Strange Disappearance of Civic America</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/2020/03/the-nuclear-family-was-a-mistake/605536/" target="_blank">The Nuclear Family Was A Mistake</a></li>
+<li><a href="https://www.theverge.com/21507966/foxconn-empty-factories-wisconsin-jobs-loophole-trump" target="_blank">The 8th Wonder of the World</a></li>
+</ul>
+
+<h3 id="health">Health</h3>
+
+<ul>
+<li><a href="https://slatestarcodex.com/2013/07/17/who-by-very-slow-decay/" target="_blank">Who by Very Slow Decay</a></li>
+<li><a href="https://www.nytimes.com/2012/04/22/magazine/the-science-and-history-of-treating-depression.html" target="_blank">Post-Prozac Nation</a></li>
+<li><a href="https://www.thecut.com/2019/07/what-happens-when-lyme-disease-becomes-an-identity.html" target="_blank">Maybe it&rsquo;s Lyme</a> / <a href="https://logicmag.io/justice/help-me-or-soon-i-will-die/" target="_blank">Help Me or Soon I Will Die</a></li>
+<li><a href="https://astralcodexten.substack.com/p/book-review-from-oversight-to-overkill" target="_blank">From Oversight to Overkill</a></li>
+<li><a href="https://www.nybooks.com/daily/2020/07/21/licensed-to-pill/" target="_blank">Licensed to Pill</a></li>
+<li><a href="https://www.newyorker.com/magazine/2009/06/01/the-cost-conundrum" target="_blank">The Cost Conundrum</a></li>
+</ul>
+
+<h3 id="rule-of-law">Rule of Law</h3>
+
+<ul>
+<li><a href="https://www.jonathanrauch.com/jrauch_articles/demosclerosis_the_original_article/" target="_blank">Demosclerosis</a></li>
+<li><a href="https://harpers.org/archive/2019/06/the-pentagon-syndrome/" target="_blank">The Pentagon Syndrome</a></li>
+<li><a href="https://www.nytimes.com/2017/12/28/nyregion/new-york-subway-construction-costs.html" target="_blank">The Most Expensive Mile of Subway Track on Earth</a></li>
+<li><a href="https://www.politico.com/news/magazine/2019/11/29/penn-station-robert-caro-073564" target="_blank">This Is Why Your Holiday Travel Is Awful</a></li>
+<li><a href="https://www.nytimes.com/2020/05/23/business/omegaverse-erotica-copyright.html" target="_blank">A Feud in Wolf-Kink Erotica Raises a Deep Legal Question</a></li>
+<li><a href="https://isi.org/modern-age/somewhere-between-a-jeremiad-and-a-eulogy/" target="_blank">Somewhere Between a Jeremiad and a Eulogy</a></li>
+<li><a href="https://slatestarcodex.com/2014/07/30/meditations-on-moloch/" target="_blank">Meditations on Moloch</a></li>
+</ul>
+
+<h3 id="education">Education</h3>
+
+<ul>
+<li><a href="https://theamericanscholar.org/why-so-many-kids-struggle-to-learn/" target="_blank">Why So Many Kids Struggle to Learn</a> / <a href="https://freddiedeboer.substack.com/p/you-arent-actually-mad-at-the-sats" target="_blank">You Aren&rsquo;t Actually Mad at the SATs</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/2019/10/when-the-culture-war-comes-for-the-kids/596668/" target="_blank">When the Culture War Comes for the Kids</a></li>
+<li><a href="https://americanaffairsjournal.org/2021/11/crises-of-elite-competition-in-the-east-and-west/" target="_blank">Crises of Elite Competition in the East and West</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/2021/04/private-schools-are-indefensible/618078/" target="_blank">Private Schools are Indefensible</a> / <a href="https://www.theatlantic.com/magazine/archive/2005/01/lost-in-the-meritocracy/303672/" target="_blank">Lost in the Meritocracy</a></li>
+<li><a href="https://www.newyorker.com/magazine/2005/10/10/getting-in" target="_blank">Getting In</a> / <a href="https://cdn.theatlantic.com/assets/media/files/20201101_nichesports.pdf" target="_blank">The Mad, Mad World of Niche Sports Among Ivy League&ndash;Obsessed Parents</a></li>
+<li><a href="https://palladiummag.com/2019/08/05/the-real-problem-at-yale-is-not-free-speech/" target="_blank">The Real Problem at Yale is not Free Speech</a> / <a href="https://www.theatlantic.com/magazine/archive/2008/06/in-the-basement-of-the-ivory-tower/306810/" target="_blank">In the Basement of the Ivory Tower</a></li>
+</ul>
+
+<h3 id="success">Success</h3>
+
+<ul>
+<li><a href="https://www.strike.coop/bullshit-jobs/" target="_blank">On the Phenomenon of Bullshit Jobs</a></li>
+<li><a href="https://slatestarcodex.com/2014/09/30/i-can-tolerate-anything-except-the-outgroup/" target="_blank">I Can Tolerate Anything Except the Outgroup</a></li>
+<li><a href="https://nymag.com/intelligencer/2020/07/david-shor-cancel-culture-2020-election-theory-polls.html" target="_blank">David Shor&rsquo;s Unified Theory of American Politics</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/2021/09/blame-the-bobos-creative-class/619492/" target="_blank">How The Bobos Broke America</a></li>
+<li><a href="https://www.gq.com/story/mount-everest-chaos-at-the-top-of-the-world" target="_blank">Chaos at the Top of the World</a></li>
+</ul>
+
+<h3 id="leadership">Leadership</h3>
+
+<ul>
+<li><a href="https://lcamtuf.coredump.cx/communism/Is%20This%20Tomorrow:%20America%20Under%20Communism!/" target="_blank">Is This Tomorrow</a> / <a href="https://chineseposters.net/themes/mao-cult" target="_blank">The Mao Cult</a></li>
+<li><a href="https://www.newyorker.com/magazine/2002/04/08/leasing-the-rain" target="_blank">Leasing the Rain</a></li>
+<li><a href="https://palladiummag.com/2019/02/02/a-trip-behind-the-spectacle-at-davos/" target="_blank">A Trip Behind the Spectacle at Davos</a></li>
+<li><a href="https://harpers.org/2019/10/the-fourth-estate/" target="_blank">The Fourth Estate</a></li>
+<li><a href="https://www.propublica.org/article/inside-the-fall-of-the-cdc" target="_blank">Inside the Fall of the CDC</a></li>
+<li><a href="https://dominiccummings.com/2014/10/30/the-hollow-men-ii-some-reflections-on-westminster-and-whitehall-dysfunction/" target="_blank">The Hollow Men</a></li>
+</ul>
+
+<h3 id="information">Information</h3>
+
+<ul>
+<li><a href="https://chosenbychoice.substack.com/p/learning-how-to-and-how-not-to-kill" target="_blank">Learning How to Kill</a> / <a href="https://ravenmagazine.org/magazine/twitter-the-intimacy-machine/" target="_blank">The Intimacy Machine</a></li>
+<li><a href="https://journals.sagepub.com/doi/full/10.1177/0306312714535679" target="_blank">Academic Urban Legends</a> / <a href="https://idlewords.com/2017/09/anatomy_of_a_moral_panic.htm" target="_blank">Anatomy of a Moral Panic</a> / <a href="https://astralcodexten.substack.com/p/too-good-to-check-a-play-in-three" target="_blank">Too Good to Check</a></li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3814191" target="_blank">The Rise and Fall of &lsquo;Social Bot&rsquo; Research</a></li>
+<li><a href="https://idlewords.com/talks/robot_armies.htm" target="_blank">Who Will Command The Robot Armies?</a></li>
+<li><a href="https://www.americanrhetoric.com/speeches/newtonminow.htm" target="_blank">Television and the Public Interest</a> / <a href="https://harpers.org/archive/2021/09/bad-news-selling-the-story-of-disinformation" target="_blank">Bad News</a></li>
+<li><a href="https://www.newyorker.com/magazine/2011/02/14/the-information" target="_blank">The Information</a></li>
+</ul>
+
+<h3 id="lives">Lives</h3>
+
+<ul>
+<li><a href="https://www.theatlantic.com/magazine/archive/2017/06/lolas-story/524490/" target="_blank">My Family&rsquo;s Slave</a></li>
+<li><a href="https://www.damninteresting.com/the-zero-armed-bandit/" target="_blank">The Zero-Armed Bandit</a></li>
+<li><a href="https://www.thewirechina.com/2020/05/03/the-quantum-man/" target="_blank">Death of a Quantum Man</a></li>
+<li><a href="https://www.newyorker.com/magazine/2020/05/18/thirty-six-thousand-feet-under-the-sea" target="_blank">36,000 Feet Under the Sea</a></li>
+<li><a href="https://www.worksinprogress.co/issue/the-maintenance-race/" target="_blank">The Maintenance Race</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/2010/10/autisms-first-child/308227/" target="_blank">Autism&rsquo;s First Child</a></li>
+<li><a href="https://hazlitt.net/longreads/sacrifice" target="_blank">Sacrifice</a></li>
+</ul>
+
+<h3 id="change">Change</h3>
+
+<ul>
+<li><a href="https://flashbak.com/remembering-kowloon-walled-city-the-lawless-outpost-that-was-once-the-most-densely-populated-place-on-earth-427330/" target="_blank">Remembering Kowloon Walled City</a> / <a href="https://restofworld.org/2020/india-magh-mela/" target="_blank">Eyes In The Sky</a></li>
+<li><a href="https://www.newyorker.com/magazine/2020/08/17/how-china-controlled-the-coronavirus" target="_blank">How China Controlled the Coronavirus</a></li>
+<li><a href="https://www.foreignaffairs.com/articles/asia/1994-03-01/conversation-lee-kuan-yew-0" target="_blank">A Conversation with Lee Kuan Yew</a> / <a href="https://palladiummag.com/2021/10/11/the-triumph-and-terror-of-wang-huning/" target="_blank">The Triumph and Terror of Wang Huning</a></li>
+<li><a href="https://www.theatlantic.com/magazine/archive/1993/12/how-the-world-works/305854/" target="_blank">How the World Works</a></li>
+<li><a href="https://www.nytimes.com/2012/01/22/business/apple-america-and-a-squeezed-middle-class.html" target="_blank">How the U.S. Lost Out on iPhone Work</a> / <a href="https://www.newyorker.com/magazine/2021/03/15/the-rise-of-made-in-china-diplomacy" target="_blank">The Rise of Made-in-China Diplomacy</a></li>
+<li><a href="https://www.newyorker.com/magazine/2021/09/13/the-other-afghan-women" target="_blank">The Other Afghan Women</a> / <a href="https://web.archive.org/web/20210901095003/https://www.weltwoche.ch/amp/2021-35/weltwoche-international/taliban-takeover-die-weltwoche-ausgabe-35-2021.html" target="_blank">How We Beat America</a></li>
+</ul>
+
+<h3 id="the-future">The Future</h3>
+
+<ul>
+<li><a href="https://a16z.com/2020/04/18/its-time-to-build/" target="_blank">It&rsquo;s Time to Build</a> / <a href="https://www.theatlantic.com/ideas/archive/2022/08/marc-andreessens-opposition-housing-project-nimby/671061/" target="_blank">The Billionaire&rsquo;s Dilemma</a></li>
+<li><a href="https://danwang.co/how-technology-grows/" target="_blank">How Technology Grows</a></li>
+<li><a href="https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm" target="_blank">Industrial Society and its Future</a></li>
+<li><a href="https://thebaffler.com/salvos/how-to-become-an-intellectual-in-silicon-valley-timms" target="_blank">How to Become an Intellectual in Silicon Valley</a> / <a href="https://www.piratewires.com/p/extract-or-die" target="_blank">Extract or Die</a></li>
+<li><a href="https://idlewords.com/talks/web_design_first_100_years.htm" target="_blank">Web Design: The First 100 Years</a> / <a href="https://www.nickbostrom.com/fable/dragon.html" target="_blank">The Fable of the Dragon-Tyrant</a></li>
+<li><a href="https://patrickcollison.com/fast" target="_blank">Fast</a> / <a href="https://www.sbnation.com/a/17776-football/" target="_blank">17776</a></li>
+</ul>
+
+    </div>
+  
+</div>
+
+    </div>
+  </section>
+
+
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/python.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.368ad8701ddf69c34950016f6435139b.js"></script>
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-130690827-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2023 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
